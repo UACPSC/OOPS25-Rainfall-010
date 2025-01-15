@@ -1,0 +1,4 @@
+| Hourly Rainfall | Inches in 100s |
+|:----------------|----------------|
+| Average         |     0.04       |
+| Heaviest        |     1.04       |
