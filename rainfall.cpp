@@ -13,7 +13,9 @@ int main() {
 
     // input hourly rainfall data
     std::vector<float> rainfall;
-    float t, m, n;
+    float t;
+    float m;
+    float n;
     while (std::cin >> n) {
         rainfall.push_back(n);
     }
