@@ -16,7 +16,7 @@ int main() {
         rainfall.push_back(n);
     }
     if (!rainfall.size()) {
-        std::cout << "Error: no rainfall data";
+        std::cerr << "Error: no rainfall data";
         return 1;
     }
     t = rainfall[0];
