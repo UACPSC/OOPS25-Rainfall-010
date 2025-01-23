@@ -23,10 +23,10 @@ int main() {
     }
 
     // calculate the average and heaviest rainfall
-    double t = rainfall[0];
+    double total = rainfall[0];
     double m = rainfall[0];
     for (std::vector<double>::size_type i = 1; i < rainfall.size(); ++i) {
-        t += rainfall[i];
+        total += rainfall[i];
         if (rainfall[i] > m)
             m = rainfall[i];
     }
@@ -34,7 +34,7 @@ int main() {
     // output the rainfall report
     std::cout << "| Hourly Rainfall | Inches in 100s |" << '\n';
     std::cout << "|:----------------|----------------|" << '\n';
-    std::cout << "| Average         |     " << std::left << std::setw(10) << std::fixed << std::setprecision(2) << (t / rainfall.size()) << " |" << '\n';
+    std::cout << "| Average         |     " << std::left << std::setw(10) << std::fixed << std::setprecision(2) << (total / rainfall.size()) << " |" << '\n';
     std::cout << "| Heaviest        |     " << std::left << std::setw(10) << m << " |" << '\n';
 
     return 0;
