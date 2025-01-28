@@ -34,11 +34,12 @@ int main() {
     for (std::vector<double>::size_type i = 1; i < rainfall.size(); ++i) {
         total += rainfall[i];
     }
+    auto average = total / rainfall.size();
 
     // output the rainfall report
     std::cout << "| Hourly Rainfall | Inches in 100s |" << '\n';
     std::cout << "|:----------------|----------------|" << '\n';
-    std::cout << "| Average         |     " << std::left << std::setw(10) << std::fixed << std::setprecision(2) << (total / rainfall.size()) << " |" << '\n';
+    std::cout << "| Average         |     " << std::left << std::setw(10) << std::fixed << std::setprecision(2) << average << " |" << '\n';
     std::cout << "| Heaviest        |     " << std::left << std::setw(10) << heaviest << " |" << '\n';
 
     return 0;
