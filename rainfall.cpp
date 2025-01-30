@@ -24,17 +24,17 @@ int main() {
 
     // calculate the heaviest rainfall
     auto heaviest = rainfall[0];
-    for (auto rain : rainfall) {
+    for (const auto rain : rainfall) {
         if (rain > heaviest)
             heaviest = rain;
     }
 
     // calculate the average rainfall
     double total = 0.0;
-    for (auto rain : rainfall) {
+    for (const auto rain : rainfall) {
         total += rain;
     }
-    auto average = total / rainfall.size();
+    const auto average = total / rainfall.size();
 
     // output the rainfall report
     std::cout << "| Hourly Rainfall | Inches in 100s |" << '\n';
