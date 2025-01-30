@@ -30,7 +30,7 @@ int main() {
     }
 
     // calculate the average rainfall
-    auto total = 0;
+    double total = 0.0;
     for (auto rain : rainfall) {
         total += rain;
     }
