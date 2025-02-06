@@ -43,11 +43,7 @@ int main() {
     auto heaviest = max(rainfall);
 
     // calculate the average rainfall
-    double total = 0.0;
-    for (const auto rain : rainfall) {
-        total += rain;
-    }
-    const auto average = total / rainfall.size();
+    const auto average = avg(rainfall);
 
     // output the rainfall report
     std::cout << "| Hourly Rainfall | Inches in 100s |" << '\n';
