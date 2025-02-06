@@ -30,11 +30,7 @@ int main() {
     }
 
     // calculate the heaviest rainfall
-    auto heaviest = rainfall[0];
-    for (const auto rain : rainfall) {
-        if (rain > heaviest)
-            heaviest = rain;
-    }
+    auto heaviest = max(rainfall);
 
     // calculate the average rainfall
     double total = 0.0;
