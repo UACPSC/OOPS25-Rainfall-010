@@ -39,9 +39,6 @@ int main() {
         return 1;
     }
 
-    // calculate the heaviest rainfall
-    auto heaviest = max(rainfall);
-
     // calculate the average rainfall
     const auto average = avg(rainfall);
 
@@ -49,7 +46,7 @@ int main() {
     std::cout << "| Hourly Rainfall | Inches in 100s |" << '\n';
     std::cout << "|:----------------|----------------|" << '\n';
     std::cout << "| Average         |     " << std::left << std::setw(10) << std::fixed << std::setprecision(2) << average << " |" << '\n';
-    std::cout << "| Heaviest        |     " << std::left << std::setw(10) << heaviest << " |" << '\n';
+    std::cout << "| Heaviest        |     " << std::left << std::setw(10) << max(rainfall) << " |" << '\n';
 
     return 0;
 }
