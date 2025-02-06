@@ -20,6 +20,16 @@ double max(const std::vector<double>& data) {
     return maximum;
 }
 
+// average of the data
+double avg(const std::vector<double>& data) {
+    double total = 0.0;
+    for (const auto item : data) {
+        total += item;
+    }
+
+    return total / data.size();
+}
+
 int main() {
 
     // input hourly rainfall data
